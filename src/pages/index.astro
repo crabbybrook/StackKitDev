@@ -1,0 +1,156 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+
+import {
+	Clock,
+	CsvTable,
+	Fire,
+	Json,
+	JSONFile,
+	Link,
+	Lock,
+	Palette,
+	Regex,
+	Rgb,
+	Shield,
+	Tick,
+	Timezone,
+} from "../Icons/allIcons";
+import Popular from "../components/Popular";
+import ToolBox from "../components/ToolBox";
+---
+
+<Layout>
+	<div>
+		<div class="flex">
+			<div class="w-full p-5 text-center">
+				<div class="flex justify-center items-center flex-col">
+					<div class="flex gap-2 text-4xl">
+						<p class="text-white font-bold">Developer</p>
+						<p
+							class="bg-linear-to-r from-blue-500 via-violet-500 to-purple-500 bg-clip-text text-transparent font-bold"
+						>
+							Tools
+						</p>
+					</div>
+
+					<div class="pt-2">
+						<p class="text-gray-500 text-xs text-center">
+							A collection of free online tools for developers,
+							with zero data stored.
+						</p>
+					</div>
+
+					<div
+						class="grid grid-cols-3 lg:grid-cols-5 pt-5 gap-3 max-w-8xl justify-center flex-wrap"
+					>
+						<ToolBox
+							where="/json-formatter"
+							title="JSON Formatter"
+							desc="Format, validate and beautify JSON"
+							logo={Json}
+							logoColor="text-green-400"
+						/>
+
+						<ToolBox
+							where="/json-to-csv"
+							title="JSON to CSV"
+							desc="Convert JSON data to CSV"
+							logo={CsvTable}
+							logoColor="text-amber-400"
+						/>
+
+						<ToolBox
+							where="/base64-encode-decode"
+							title="Base64"
+							desc="Encode or decode Base64"
+							logo={Lock}
+							logoColor="text-violet-400"
+						/>
+
+						<ToolBox
+							where="/jwt-decoder"
+							title="JWT Decoder"
+							desc="Decode and inspect JWT tokens"
+							logo={Shield}
+							logoColor="text-blue-400"
+						/>
+
+						<ToolBox
+							where="/regex-tester"
+							title="Regex Tester"
+							desc="Text and debug regular expressions"
+							logo={Regex}
+							logoColor="text-red-400"
+						/>
+					</div>
+				</div>
+				<div class="mt-10">
+					<div class="flex gap-2 items-center">
+						<div class="text-orange-500">
+							<Fire size="lg" />
+						</div>
+						<p class="text-2xl font-bold text-white">
+							Popular Tools
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="mt-5 grid grid-cols-1 lg:grid-cols-2 justify-center items-center gap-5 max-w-8xl"
+				>
+					<Popular
+						logo={Clock}
+						color="text-green-500"
+						title="Timestamp Converter"
+						desc="Convert Timestamps to readable dates."
+						btn={true}
+						where="/timestamp-converter"
+					/>
+
+					<Popular
+						logo={Palette}
+						color="text-violet-600"
+						title="HEX to RGB Converter"
+						desc="Convert HEX color codes to RGB values."
+						btn={true}
+						where="/hex-to-rgb"
+					/>
+					<Popular
+						logo={JSONFile}
+						color="text-amber-500"
+						title="CSV to JSON"
+						desc="Convert CSV data to JSON format."
+						btn={true}
+						where="/csv-to-json"
+					/>
+					<Popular
+						logo={Link}
+						color="text-blue-500"
+						title="URL Encode / Decoder"
+						desc="Encode or decode URLs easily."
+						btn={true}
+						where="/url-encode-decode"
+					/>
+					<Popular
+						logo={Rgb}
+						color="text-yellow-500"
+						title="RGB to HEX Converter"
+						desc="Convert RGB values to HEX codes."
+						btn={true}
+						where="/rgb-to-hex"
+					/>
+					<Popular
+						logo={Timezone}
+						color="text-orange-500"
+						title="Timezone Converter"
+						desc="Convert Timezones to readable format"
+						btn={true}
+						where="/timezone-converter"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>

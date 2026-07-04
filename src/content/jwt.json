@@ -1,0 +1,72 @@
+{
+    "toolName": "JWT Decoder Online",
+    "metaTitle": "Decode JSON Web Token Online",
+    "metaDescription": "Decode JSON Web Token online instantly. Inspect header metadata, parse payload identity claims, get the signature of the token, its validatity and its status to understand token structures using our secure JWT decoder online..",
+    "introTitle": "Why use our online JWT decoder tool ?",
+    "introText": "In Modern distributed application, security and microservice networks rely heavily on JSON Web Tokens / JWT tokens to safely pass user permissions, identities, and metadata context between  system components. These compact, web ready strings are cryptographically secure but completely unreadable to the human eye because they are encoded using compact binary to text string / arrays. People working as developers, systems administrators, and security engineers frequently need to decode online properties of json web tokens inorder to trace identity errors, verify claim logic or evaluate the rules of backend access during local deployments. Our JWT decoder online tool simplifies this architectural process by reading the token string, dividing its parameters like header, payload, signature and also provides extracts 2 additional paramters which are Expiry date of the tken and Full Token Status. Our JWT decoder online tool is responsible for rendering the underlying internal object fields instantly within an intuitive interface.",
+    "initialText": "Our JWT decoder online tool is responsible for extracting / decoding a jwt / json web token string and divide its parameters like header, payload, signature, expiry date and token status at a lightning speed and in a protected environment where the provided jwt / json web token string is not stored.",
+    "initialDesc": [
+        "JSON Web Token (JWT) is an open industry standard used to share information between two entities, mostly between client and server. They contain JSON objects which consists the information that needs to be shared.",
+        "Each JWT is signed using cryptographical algorithm to ensure that the client or a malicious party cannot alter the JSON contents or access personal information like email of the user.",
+        "An encrypted or signed token looks like a single continuous block of alphanumeric characters.",
+        "The official security specifications divide the encrypted or signed token into three distinct components separated by absolute point markers.",
+        "The three distinct components of the encrypted or signed token are the cryptographic header block, the application payload array, and the validation signature string.",
+        "If any attempts to manually split these three sections (header, payload and signature) apart and translate the underlying strings in local terminal, it will cause a slowdown in the development and increases the risk of manual parsing errors.",
+        "Our JWT Decoder online tool streamlines the above process entirely within the local web browser environment of the client.",
+        "The JWT Decoder engine automatically runs the steps of structural analysis to identify the security algorithm, parse payload and ensure the identity configurations map cleanly to backend requirements without passing actual data over the network."
+    ],
+    "steps": [
+        "Copy the JWT / Json Web Token string that needs to be decoded.",
+        "If you want to DRY run, click on sample button.",
+        "Paste that copied JWT string under the textarea of JWT Token.",
+        "Click on the Run button to decode the JWT string.",
+        "If the pasted jwt string is invalid, nothing will appear.",
+        "If the pasted jwt string is valid, decoding is successful and results will be displayed in header, payload, signature, expiry date and token status.",
+        "Header will display the header of inputted JWT string.",
+        "Payload will display the payload of inputted JWT string.",
+        "Signature will display the signature of inputted JWT string.",
+        "Expiry Date will display the expiry date of inputted JWT string.",
+        "Token status will display the token status of inputted JWT string.",
+        "Clear button will clear everything including the header, payload, signature, expiry date and token status."
+    ],
+    "faqs": [
+        {
+            "question": "How can to decode json web token (JWT) online, safely and without risking user security ?",
+            "answer": "Data privacy is the absolute and important requirement across our entire StackKitDev platform. When anyone loads an jwt / json web token string into our JWT Decoder online tool, all parsing, token splitting, and string translation algorithms run entirely inside the local browser, storing absolutely nothing. The application tokens, access privileges, customer profiles, and corporate API keys are neither uploaded to the servers of our JWT Decoder online tool nor exposed to any third party data handlers. This structure gives developers a completely safe debugging space to test active authentication related jwt strings without risking data breaches."
+        },
+        {
+            "question": "What is the primary difference between decoding a token and verifying a token ?",
+            "answer": "Decoding is a simple mechanical translation step where a token is simply translated and extracts the elements of a Base64URL string and turns them back into human readable text blocks. Anyone who captures an unencrypted token can read its header and payload details because the data is not hidden or not signed. On the other hand, verification requires a jwt signature verification to verify the token and decode its header and payload. This engine uses a shared secret or a public key file to recalculate the cryptographic signature block, confirming that the token was actually issued by a trusted server and has not been modified by a third party during transmission over the network."
+        },
+        {
+            "question": "Why the StackKitDev's JWT Decoder is best ?",
+            "answer": "Our online JWT Decoder is best because our tool provides expiry date and full token status of the inputted jwt / json web token string which makes the analysis of the jwt string more easy for the developers. Our online JWT Decoder tool has the most simply UI and best UX, easy navigation and no signups is required to use and you can decode authenticated jwt string as no information is stored. The whole decoding process is completed at a lightning speed."
+        },
+        {
+            "question": "Why does a standard token string fails to parse correctly inside web debugging windows ?",
+            "answer": "The failures of Token parsing are typically caused by missing characters, accidental whitespaces, or incorrect formatting loops during copy. A valid security token must have exactly two period separation marks to split its three sections (header, payload and signature), cleanly. If you copy a token from a command line tool or a network log view that wraps lines or cuts off trailing characters, the alignment will break."
+        },
+        {
+            "question": "Does StackKitDev stores any data ?",
+            "answer": "StackKitDev stores no data or information of any kind."
+        }
+    ],
+    "glossary": [
+        {
+            "term": "JSON (JavaScript Object Notation)",
+            "definition": "A lightweight, open standard, text based data interchange format designed to be increase human readability and is developed by humans, and is easily parsed and generated by machines. It is built on two primary structural frameworks: collections of key and value pairs and ordered lists of values."
+        },
+        {
+            "term": "JSON String",
+            "definition": "A serialized sequence of text configured strictly, according to JSON syntax guidelines. It represents structured data layouts as plain text, allowing complex multidimensional arrays, objects, strings, integers, and booleans i.e. all primitive datatypes to be transmitted rapidly across network pipelines as an unified stream of data."
+        },
+        {
+            "term": "JOSE Header",
+            "definition": "The main metadata block of a token that specifies the exact cryptographic operations and algorithms used to protect the integrity of the inputted jwt / json web token string."
+        },
+        {
+            "term": "Base64URL Encoding",
+            "definition": "A modified version of the standard Base64 string layout that removes padding and substitutes web safe symbols to ensure parameters transmits cleanly over the network addresses."
+        }
+    ]
+}

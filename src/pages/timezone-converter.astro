@@ -1,0 +1,32 @@
+---
+import ToolLayout from "../layouts/ToolLayout.astro";
+import TimeZoneConv from "../components/ToolComponent/TimeZoneConv";
+import timezone from "../content/timezone.json"
+
+const {toolName, metaDescription, introTitle, introText, steps, faqs, glossary, initialText, initialDesc} = timezone
+
+---
+
+<ToolLayout title={toolName} desc={metaDescription} introText={introText} introTitle={introTitle} steps={steps} faqs={faqs} glossary={glossary} initialText={initialText} initialDesc = {initialDesc}>
+    <div class="flex flex-col p-3 gap-2">
+        <div class="text-white text-2xl flex justify-between font-bold">
+            Timezone Converter
+        </div>
+        <div class="text-gray-500 flex justify-between">
+            <p class="text-sm">Convert a time between timezones</p>
+        </div>
+
+        <div class="flex justify-start">
+           <TimeZoneConv client:load/>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    A Guide To Our JSON World
+                </p>
+
+            </div>
+        </div>
+    </div>
+</ToolLayout>

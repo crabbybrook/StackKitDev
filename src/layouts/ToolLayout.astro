@@ -1,0 +1,124 @@
+---
+import "../styles/global.css";
+
+import Sidebar from "../components/Sidebar";
+import { ClientRouter } from "astro:transitions";
+import Appbar from "../components/Appbar";
+import Footbar from "../components/Footbar";
+const {
+  title,
+  desc,
+  introTitle,
+  introText,
+  steps,
+  faqs,
+  glossary,
+  initialText,
+  initialDesc,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-75VDGL3PPY"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-75VDGL3PPY");
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={desc} />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="any"
+      href="/favicon.ico?v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png?v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png?v=2"
+    />
+    <ClientRouter />
+  </head>
+  <body class="bg-[#0b1329] text-white m-0 p-0 min-h-screen flex flex-col">
+    <Appbar />
+    <div class="flex flex-1">
+      <aside class="w-1/4">
+        <Sidebar client:only="react" />
+      </aside>
+      <main class="w-3/4 p-5 text-center">
+        <slot />
+      </main>
+    </div>
+    <div class="m-5 p-4 grid grid-cols-1 gap-10 border border-amber-200">
+      <div class="text-white font-thin text-center p-2">
+        <p class="font-bold text-2xl mb-2 text-lime-500">{introTitle}</p>
+        <p class="text-sm">{introText}</p>
+      </div>
+      <div class="text-white font-thin p-2">
+        <p class="text-sm text-center">{initialText}</p>
+        <ul class="text-sm list-disc mt-2">
+          {initialDesc.map((desc: string) => <li class="p-2">{desc}</li>)}
+        </ul>
+      </div>
+      <div class="text-white font-thin p-2">
+        <p class="font-bold text-2xl mb-2 text-center text-pink-500">
+          User Guide
+        </p>
+        <ul class="text-white list-disc">
+          {steps.map((step: string) => <li class="p-2">{step}</li>)}
+        </ul>
+      </div>
+      <div class="text-white font-thin p-2 text-center">
+        <p class="font-bold text-2xl mb-2 text-center text-indigo-400">
+          F.A.Q.
+        </p>
+        {
+          faqs.map((faq: { question: string; answer: string }) => (
+            <div class="mt-4">
+              <p class="text-lg font-bold">{faq.question}</p>
+              <p>{faq.answer}</p>
+            </div>
+          ))
+        }
+      </div>
+      <div class="text-white font-thin p-2 text-center">
+        <p class="font-bold text-2xl mb-2 text-center text-green-400">
+          Glossary
+        </p>
+        {
+          glossary.map((glo: { term: string; definition: string }) => (
+            <div class="mt-4">
+              <p class="text-lg font-bold">{glo.term}</p>
+              <p>{glo.definition}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <Footbar />
+  </body>
+</html>

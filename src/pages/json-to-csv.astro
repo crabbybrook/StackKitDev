@@ -1,0 +1,23 @@
+---
+import Jsoncsv from "../components/ToolComponent/Jsoncsv";
+import ToolLayout from "../layouts/ToolLayout.astro";
+import jsonCsv from '../content/jsonCsv.json'
+
+const {toolName, metaDescription, introTitle, introText, steps, faqs, glossary, initialText, initialDesc} = jsonCsv
+---
+
+<ToolLayout title={toolName} desc={metaDescription} introText={introText} introTitle={introTitle} steps={steps} faqs={faqs} glossary={glossary} initialText={initialText} initialDesc = {initialDesc}>
+    <div class="flex flex-col p-3 gap-2">
+        <div class="text-white text-2xl flex justify-between font-bold">
+            JSON to CSV
+        </div>
+        <div class="text-gray-500 flex justify-between">
+            <p class="text-sm">Convert JSON array data to CSV format</p>
+        </div>
+
+        <div class="flex justify-start">
+           <Jsoncsv client:load/>
+        </div>
+
+    </div>
+</ToolLayout>

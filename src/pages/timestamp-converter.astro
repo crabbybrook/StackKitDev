@@ -1,0 +1,32 @@
+---
+import ToolLayout from "../layouts/ToolLayout.astro";
+import TimestampConv from "../components/ToolComponent/TimeStampConv";
+import timestamp from "../content/timestamp.json"
+
+const {toolName, metaDescription, introTitle, introText, steps, faqs, glossary, initialText, initialDesc} = timestamp
+
+---
+
+<ToolLayout title={toolName} desc={metaDescription} introText={introText} introTitle={introTitle} steps={steps} faqs={faqs} glossary={glossary} initialText={initialText} initialDesc = {initialDesc}>
+    <div class="flex flex-col p-3 gap-2">
+        <div class="text-white text-2xl flex justify-between font-bold">
+            Timestamp Converter
+        </div>
+        <div class="text-gray-500 flex justify-between">
+            <p class="text-sm">Convert timestamps to human readable dates and vice versa</p>
+        </div>
+
+        <div class="flex justify-start">
+           <TimestampConv client:load/>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    A Guide To Our JSON World
+                </p>
+
+            </div>
+        </div>
+    </div>
+</ToolLayout>

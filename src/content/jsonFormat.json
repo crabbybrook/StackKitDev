@@ -1,0 +1,96 @@
+{
+    "toolName": "JSON Formatter",
+    "metaTitle": "Free online JSON Formatter",
+    "metaDescription": "Validate, minify and prettify your raw JSON Strings",
+    "introTitle": "What's so special in online JSON Formatter of StackKitDev ?",
+    "introText": "Whether you want to validate your JSON string, prettify it, or minify it, all are available in the JSON Formatter of StackKitDev. Moreover, our tool is very fast and safe. To use our tool, you neither need to sign up nor have to pay money. Our JSON Formatter is absolutely free, and if by mistake you are validating or minifying your JSON string that contains your sensitive information, don't worry; StackKitDev doesn't store any data; it computes everything in the browser.",
+    "initialText": "JSON Formatter and JSON Validator help to format JSON and validate your JSON string. It also provides prettifier and minifier to beautify and minify your JSON strings, all at one place.",
+    "initialDesc": [
+        "Our Online JSON Validator helps to validate JSON online with Error Messages.",
+        "Our Online JSON Formatter is also a JSON Beautifier / Prettifier that beautifies the inputted JSON string",
+        "Supports Complex and nested JSON Data.",
+        "Our Online JSON Formatter works at a lightning speed with no browser lag or timeouts",
+        "95% of API Uses JSON to transfer data between client and server. Our Online JSON Formatter can work as an API formatter.",
+        "Our Online JSON Formatter is free and doesnt require any signups.",
+        "Stores absolutely no data or information of any kind",
+        "This JSON online formatter can also work as JSON Lint.",
+        "Use Sample Button to DRY the tool"
+    ],
+    "steps": [
+        "Copy your JSON string and paste it in the textarea of Input JSON.",
+        "If you want to DRY run, click on Sample button.",
+        "Clicking on Run button will prettify your JSON string.",
+        "Clicking Minify button will minify your JSON string.",
+        "Both Run and Run Minify buttons executes 2 things at one go. First, they validates your JSON string and second formats it into standard JSON string.",
+        "Clear button clears everything along with output.",
+        "The textarea of Output JSON will showcase your result.",
+        "Scroll down to find status bar validating the result.",
+        "If the textarea of Output JSON is empty, it means provided JSON string is invalid. You can verify it from status bar.",
+        "The Status bar also provides number of lines, characters and file size.",
+        "To copy the Output JSON or Input JSON, click on copy button."
+    ],
+    "faqs": [
+        {
+            "question": "How does the our Online JSON Formatter works?",
+            "answer": "When you provide a JSON string and click on run button or run minify button, Our JSON Formatter engine executes the operation, without storing any data, by running inside the browser and gives out the result in a lightning speed."
+        },
+        {
+            "question": "Can I format a massive JSON array or complex nested payloads?",
+            "answer": "Absolutely. JSON Formatter of StackKitDev has a powerful engine which is fully capable to process such massive data payloads effortlessly and at a lightning speed without even causing any browser lag or system timeout. Whether you are dealing with complex system logs, or nested server configuration maps, or large third party API responses, our JSON Formatter can effortlessly parse such data."
+        },
+        {
+            "question": "What is the difference between Minified vs Prettified JSON data?",
+            "answer": "The main difference between minified json data and prettified json data is efficiency for machines versus readability for humans. Minified version is compact and ideal for fast transit over network whereas in prettified version data uses line breaks and tab spacings to create a clear visual hierarchies which more human readable."
+        },
+        {
+            "question": "What makes Our Online JSON Formatter best ?",
+            "answer": "Our JSON Formatter does what a JSON formatter tool must do. It formats, validate, prettify / beautify and minify your JSON string. Also we provide simple UI and best UX in comparison to other JSON Formatter websites. Our Online JSON Formatter is designed to make the lives of developers, easier. In this Ai age, programming is the worst hitted field, everywhere is panic and chaos. Obviously our tool doesn't pop up the AI Bubble, but tries to make life a little bit simple and easier for our fellow developers. We care about them and thats what makes StackKitDev and its provided tools so specia and best because these are made by a developer for the developers."
+        },
+        {
+            "question": "Does StackKitDev stores any data?",
+            "answer": "StackKitDev stores no data or information of any kind."
+        }
+    ],
+    "glossary": [
+            {
+                "term": "JSON (JavaScript Object Notation)",
+                "definition": "A lightweight, open standard, text based data interchange format designed to be increase human readability and is developed by humans, and is easily parsed and generated by machines. It is built on two primary structural frameworks: collections of key and value pairs and ordered lists of values."
+            },
+            {
+                "term": "JSON String",
+                "definition": "A serialized sequence of text configured strictly, according to JSON syntax guidelines. It represents structured data layouts as plain text, allowing complex multidimensional arrays, objects, strings, integers, and booleans i.e. all primitive datatypes to be transmitted rapidly across network pipelines as an unified stream of data."
+            },
+            {
+                "term": "Prettify (Beautification)",
+                "definition": "The process of converting compact, dense, or poorly / ugly formatted JSON code string into a highly organized, visually appealing tree like structure which makes it easy to read. It introduces standardized indentation tracking, uniform tab spacing, and explicit line breaks to map out a clear parent and child nesting hierarchies for human inspection."
+            },
+            {
+                "term": "Minify (Compression)",
+                "definition": "The computational practice of systematically stripping out all non essential human centric characters like indentation, tab spacings, line breaks from a data payload. This includes removing carriage returns, system line breaks, tabs, and optional spaces. Minification reduces the physical file size to conserve bandwidth and speed up network transfer times."
+            },
+            {
+                "term": "Syntax Validation",
+                "definition": "An automated linting process that evaluates an input JSON data string against strict JSON syntax rules. The validation engine ensures that data payloads stays to their exact structural guidelines, identifying syntax anomalies such as unclosed parameters, missing delimiters, or structural layout mismatch, before processing."
+            },
+            {
+                "term": "Client Side Processing",
+                "definition": "An architectural computing model where data execution, manipulation, and layout rendering happens directly within the user's web browser environment via local JavaScript memory allocation. Because it executes within an isolated client side sandbox, sensitive configuration text never leaves the host machine or travels across the internet."
+            },
+            {
+                "term": "Nested Objects",
+                "definition": "A design pattern within hierarchical data structures where a parent (key) maps directly to an independent, enclosed block of JSON object rather than a single string or primitive value. This allows developers to map deeply complex real world data relationships inside a clean, scalable tree matrix."
+            },
+            {
+                "term": "JSON Payload",
+                "definition": "The actual core data transmitted inside an API network exchange or inside a server response block, or inside a system configuration file. The payload contains the meaningful content or state parameters required by an application, excluding the protocol wrappers or tracking metadata used during transport of the data packet."
+            },
+            {
+                "term": "Array",
+                "definition": "An ordered, zero indexed collection of sequential data elements wrapped inside square brackets [ ]. A JSON array can store multiple data types simultaneously, including text strings, integers, boolean, or secondary objects. Array datatype is very easy to access and we can perform random access where randomly we can access any element of an array, making it ideal for processing lists of repetitive system records."
+            },
+            {
+                "term": "JSON Lint",
+                "definition": "A specialized code quality tool that parses a data stream to enforce strict JSON syntax standardization. A linter catches invisible formatting errors, hidden structural breaks, and loose coding patterns, resulting in an exact line to character coordinates to help developers debug broken configurations, instantly."
+            }
+        ]
+}

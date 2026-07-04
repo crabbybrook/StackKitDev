@@ -1,0 +1,32 @@
+---
+import ToolLayout from "../layouts/ToolLayout.astro";
+import RgbHex from "../components/ToolComponent/RgbHex";
+import rgbhex from "../content/rgbhex.json"
+
+const {toolName, metaDescription, introTitle, introText, steps, faqs, glossary, initialText, initialDesc} = rgbhex
+
+---
+
+<ToolLayout title={toolName} desc={metaDescription} introText={introText} introTitle={introTitle} steps={steps} faqs={faqs} glossary={glossary} initialText={initialText} initialDesc = {initialDesc}>
+    <div class="flex flex-col p-3 gap-2">
+        <div class="text-white text-2xl flex justify-between font-bold">
+            RGB to HEX 
+        </div>
+        <div class="text-gray-500 flex justify-between">
+            <p class="text-sm">Convert RGB color values to HEX, RGBA, HSL, HSLA formats</p>
+        </div>
+
+        <div class="flex justify-start">
+           <RgbHex client:load/>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    A Guide To Our JSON World
+                </p>
+
+            </div>
+        </div>
+    </div>
+</ToolLayout>

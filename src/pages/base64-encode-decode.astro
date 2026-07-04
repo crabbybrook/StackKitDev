@@ -1,0 +1,32 @@
+---
+import ToolLayout from "../layouts/ToolLayout.astro";
+import Base64EncDec from '../components/ToolComponent/Base64EncDec'
+import base64 from "../content/base64.json"
+
+const {toolName, metaDescription, introTitle, introText, steps, faqs, glossary, initialText, initialDesc} = base64
+
+---
+
+<ToolLayout title={toolName} desc={metaDescription} introText={introText} introTitle={introTitle} steps={steps} faqs={faqs} glossary={glossary} initialText={initialText} initialDesc = {initialDesc}>
+    <div class="flex flex-col p-3 gap-2">
+        <div class="text-white text-2xl flex justify-between font-bold">
+            Base64 Encode / Decode
+        </div>
+        <div class="text-gray-500 flex justify-between">
+            <p class="text-sm">Encode or decode Base64 strings.</p>
+        </div>
+
+        <div class="flex justify-start">
+           <Base64EncDec client:load/>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    A Guide To Our JSON World
+                </p>
+
+            </div>
+        </div>
+    </div>
+</ToolLayout>
